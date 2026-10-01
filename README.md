@@ -1,6 +1,6 @@
 # SNA Technologies Website
 
-Wolfiz-inspired premium technology agency website built with React + Vite + Framer Motion.
+Premium technology agency website built with React + Vite + Framer Motion.
 
 ## Run locally
 
