@@ -135,7 +135,7 @@ const siteConfig = {
       description:
         "A scalable platform concept for managing complex business operations from one place.",
       tag: "CASE STUDY",
-      href: "#contact",
+      href: "/contact",
     },
     {
       title: "Real Estate CRM",
@@ -143,7 +143,7 @@ const siteConfig = {
       description:
         "A centralized CRM experience for property, agents, leads and operational workflows.",
       tag: "PRODUCT",
-      href: "#contact",
+      href: "/contact",
     },
     {
       title: "Digital Operations Suite",
@@ -151,7 +151,7 @@ const siteConfig = {
       description:
         "Connected workflows that reduce manual processes and give teams better operational visibility.",
       tag: "SOLUTION",
-      href: "#contact",
+      href: "/contact",
     },
   ],
 
