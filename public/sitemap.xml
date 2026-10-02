@@ -1,8 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://sna-technologies.com/</loc>
   </url>
+
+  <url>
+    <loc>https://sna-technologies.com/about/</loc>
+  </url>
+
+  <url>
+    <loc>https://sna-technologies.com/services/</loc>
+  </url>
+
+  <url>
+    <loc>https://sna-technologies.com/services/custom-software-development/</loc>
+  </url>
+
+  <url>
+    <loc>https://sna-technologies.com/services/web-application-development/</loc>
+  </url>
+
+  <url>
+    <loc>https://sna-technologies.com/services/mobile-app-development/</loc>
+  </url>
+
+  <url>
+    <loc>https://sna-technologies.com/services/ai-automation/</loc>
+  </url>
+
+  <url>
+    <loc>https://sna-technologies.com/services/cloud-devops/</loc>
+  </url>
+
+  <url>
+    <loc>https://sna-technologies.com/services/qa-test-automation/</loc>
+  </url>
+
+  <url>
+    <loc>https://sna-technologies.com/industries/</loc>
+  </url>
+
+  <url>
+    <loc>https://sna-technologies.com/industries/real-estate/</loc>
+  </url>
+
+  <url>
+    <loc>https://sna-technologies.com/industries/finance/</loc>
+  </url>
+
+  <url>
+    <loc>https://sna-technologies.com/industries/healthcare/</loc>
+  </url>
+
+  <url>
+    <loc>https://sna-technologies.com/industries/logistics/</loc>
+  </url>
+
+  <url>
+    <loc>https://sna-technologies.com/work/</loc>
+  </url>
+
+  <url>
+    <loc>https://sna-technologies.com/contact/</loc>
+  </url>
+
 </urlset>
