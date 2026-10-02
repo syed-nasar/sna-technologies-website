@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { ArrowUpRight, Menu, X, Plus, Minus } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import siteConfig from "./data/siteConfig";
-import snaLogo from "./assets/sna-logo-dark.png";
+import snaLogo from "./assets/sna-logo-dark.webp";
 
 const reveal = {
   hidden: { opacity: 0, y: 35 },
