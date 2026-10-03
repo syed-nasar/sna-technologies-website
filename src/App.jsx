@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { ArrowUpRight, Menu, X, Plus, Minus } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import siteConfig from "./data/siteConfig";
-import snaLogo from "./assets/sna-logo-dark.webp";
+import snaLogo from "./assets/sna-logo-dark.png";
 
 const reveal = {
   hidden: { opacity: 0, y: 35 },
@@ -147,14 +147,28 @@ function About() {
 function Services() {
   const [active, setActive] = useState(null);
 
+  const servicePaths = [
+    "/services/custom-software-development/",
+    "/services/web-application-development/",
+    "/services/mobile-app-development/",
+    "/services/ai-automation/",
+    "/services/cloud-devops/",
+    "/services/qa-test-automation/",
+  ];
+
   return (
     <section className="section services" id="services">
       <div className="container">
-        <SectionHeading eyebrow="WHAT WE DO" title="Technology designed to create momentum." light />
+        <SectionHeading
+          eyebrow="WHAT WE DO"
+          title="Technology designed to create momentum."
+          light
+        />
 
         <div className="service-list">
           {siteConfig.services.map((service, i) => {
             const isActive = active === i;
+
             return (
               <motion.div
                 className={`service-row ${isActive ? "active" : ""}`}
@@ -166,8 +180,10 @@ function Services() {
                 onClick={() => setActive(isActive ? null : i)}
               >
                 <span className="service-number">{service.number}</span>
+
                 <div className="service-main">
                   <h3>{service.title}</h3>
+
                   <AnimatePresence initial={false}>
                     {isActive && (
                       <motion.p
@@ -180,7 +196,21 @@ function Services() {
                     )}
                   </AnimatePresence>
                 </div>
-                <div className="service-icon">{isActive ? <Minus /> : <Plus />}</div>
+
+                {isActive && (
+                  <a
+                    className="service-link"
+                    href={servicePaths[i]}
+                    aria-label={`View ${service.title} service`}
+                    onClick={(event) => event.stopPropagation()}
+                  >
+                    <ArrowUpRight size={18} />
+                  </a>
+                )}
+
+                <div className="service-icon">
+                  {isActive ? <Minus /> : <Plus />}
+                </div>
               </motion.div>
             );
           })}
@@ -255,14 +285,33 @@ function Work() {
 }
 
 function Industries() {
+  const industryLinks = {
+    "Real Estate": "/industries/real-estate/",
+    Finance: "/industries/finance/",
+    Healthcare: "/industries/healthcare/",
+    Logistics: "/industries/logistics/",
+  };
+
   return (
     <section className="section industries">
       <div className="container">
-        <SectionHeading eyebrow="INDUSTRIES" title="Technology for real-world businesses." />
+        <SectionHeading
+          eyebrow="INDUSTRIES"
+          title="Technology for real-world businesses."
+        />
+
         <div className="industry-cloud">
-          {siteConfig.industries.map((industry) => (
-            <span key={industry}>{industry}</span>
-          ))}
+          {siteConfig.industries.map((industry) => {
+            const href = industryLinks[industry];
+
+            return href ? (
+              <a key={industry} href={href}>
+                {industry}
+              </a>
+            ) : (
+              <span key={industry}>{industry}</span>
+            );
+          })}
         </div>
       </div>
     </section>
